@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Username">Escribir Usuario</string>
+    <string name="password">Escribir Contraseña</string>
+    <string name="TUsername">Usuario</string>
+    <string name="Tpassword">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="forget">My Application</string>
+</resources>
