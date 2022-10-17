@@ -19,7 +19,7 @@ public class Olvide extends AppCompatActivity {
         botonConsulta.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Toast.makeText(getApplicationContext(), "Aún no funciona :(", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Módulo no funcional", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Olvide.this, Login.class);
                 startActivity(intent);
                 finish();

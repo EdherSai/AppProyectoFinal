@@ -98,7 +98,7 @@ public class registro extends AppCompatActivity {
                 correo = findViewById(R.id.TextCorreo);
                 numero = findViewById(R.id.TextTelefono);
                 grado = findViewById(R.id.TextGrado);
-                numero = findViewById(R.id.TextGrupo);
+                grupo = findViewById(R.id.TextGrupo);
 
 
                 String cadena = usuario.getText().toString() + contraseña.getText().toString();
@@ -108,7 +108,8 @@ public class registro extends AppCompatActivity {
                 ContrasenaD = digest.bytesToHex(byt);
 
                 if("".equals(String.valueOf(usuario.getText())) || "".equals(String.valueOf(nombre.getText())) ||
-                        "".equals(String.valueOf(contraseña.getText())) || "".equals(String.valueOf(correo.getText()))) {
+                        "".equals(String.valueOf(contraseña.getText())) || "".equals(String.valueOf(correo.getText())) ||
+                        "".equals(String.valueOf(numero.getText())))  {
                     Toast.makeText( getApplicationContext(), "Llenar campos obligatorios", Toast.LENGTH_LONG ).show();
                 } else{
                     CheckBox alumno = findViewById(R.id.AlumnoBox);
@@ -195,7 +196,7 @@ public class registro extends AppCompatActivity {
                                 String ValorUsr2 = datos.getUsuario();
 
                                 if (VUsuario.equals(ValorUsr2)) {
-                                    mensaje = "Usuario Ya Existente";
+                                    mensaje = "El usuario ya existe";
                                     BucleArchivo = false;
                                 } else {
                                     x = x + 1;
@@ -204,13 +205,13 @@ public class registro extends AppCompatActivity {
                                 BufferedWriter file = new BufferedWriter(new OutputStreamWriter(openFileOutput("Archivo" + x + ".txt", Context.MODE_PRIVATE)));
                                 file.write(json);
                                 file.close();
-                                mensaje = "Usuario Registrado";
+                                mensaje = "¡Registro exitoso!";
                                 BucleArchivo = false;
                             }
                         }
 
                     } catch (Exception e) {
-                        mensaje = "Error al Hacer Registro";
+                        mensaje = "Error /:";
                     }
 
                     /*guardarArchivo(json);*/

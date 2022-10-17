@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
                                 String Sha1Password2 = datos.getContraseña();
 
                                 if (Sha1Password1.equals(Sha1Password2)) {
-                                    mensaje = "Usuario Encontrado";
+                                    mensaje = "Acceso autorizado -B|";
                                     BucleArchivo = false;
                                 } else {
                                     x = x + 1;
@@ -73,7 +73,7 @@ public class Login extends AppCompatActivity {
                             }
                         }
 
-                        if("Usuario Encontrado".equals(mensaje)){
+                        if("Acceso autorizado -B|".equals(mensaje)){
                             Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Login.this, PaginaPrincipal.class);
                             startActivity(intent);
@@ -82,7 +82,9 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
 
                     } catch (Exception e) {
-                        mensaje = "Error en el Archivo";
+                        mensaje = "Error";
+                        Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
+
                     }
                 }
 
