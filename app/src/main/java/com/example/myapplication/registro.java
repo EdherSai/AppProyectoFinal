@@ -76,6 +76,11 @@ public class registro extends AppCompatActivity {
 
 
 
+
+
+
+        setContentView(R.layout.activity_registro);
+
         Button boton = findViewById(R.id.BotonLogin);
         boton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -86,8 +91,6 @@ public class registro extends AppCompatActivity {
             }
         });
 
-
-        setContentView(R.layout.activity_registro);
         Button boton2 = findViewById(R.id.BotonEnviar);
         boton2.setOnClickListener(new View.OnClickListener(){
             @Override
