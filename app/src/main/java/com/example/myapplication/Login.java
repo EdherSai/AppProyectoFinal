@@ -66,6 +66,7 @@ public class Login extends AppCompatActivity {
                                     BucleArchivo = false;
                                 } else {
                                     x = x + 1;
+
                                 }
                             }else{
                                 mensaje = "Usuario no Encontrado";
@@ -76,6 +77,7 @@ public class Login extends AppCompatActivity {
                         if("Acceso autorizado -B|".equals(mensaje)){
                             Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Login.this, PaginaPrincipal.class);
+                            intent.putExtra("archivo", x);
                             startActivity(intent);
                         }
 
