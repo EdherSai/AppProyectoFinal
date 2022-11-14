@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_list_view.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_login.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_olvide.xml" value="0.2" />
-        <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_pagina_principal.xml" value="0.33" />
+        <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_pagina_principal.xml" value="0.18" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_registro.xml" value="0.2" />
         <entry key="..\:/Users/herna/Desktop/MyApplication4/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/herna/Desktop/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.20923913043478262" />
