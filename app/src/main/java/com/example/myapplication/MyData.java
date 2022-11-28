@@ -17,7 +17,7 @@ public class MyData implements Serializable {
         return contra;
     }
 
-    public void setContra(String contra) {
+    public String setContra(String contra) {
 
         this.contra = contra;
     }
@@ -27,7 +27,7 @@ public class MyData implements Serializable {
         return name;
     }
 
-    public void setName(String name) {
+    public String setName(String name) {
 
         this.name = name;
     }
