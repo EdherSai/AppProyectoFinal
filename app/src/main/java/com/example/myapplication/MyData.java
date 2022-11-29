@@ -20,6 +20,8 @@ public class MyData implements Serializable {
     public String setContra(String contra) {
 
         this.contra = contra;
+
+        return contra;
     }
 
     public String getName() {
@@ -30,6 +32,7 @@ public class MyData implements Serializable {
     public String setName(String name) {
 
         this.name = name;
+        return name;
     }
 
     public int getImage() {

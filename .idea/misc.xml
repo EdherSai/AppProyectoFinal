@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alumno/AppRegistro/app/src/main/res/layout/activity_editar_lista.xml" value="0.33" />
+        <entry key="..\:/Users/alumno/AppRegistro/app/src/main/res/layout/activity_list_view.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/alumno/AppRegistro/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_list_view.xml" value="0.33" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_login.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
@@ -11,6 +14,7 @@
         <entry key="..\:/Users/herna/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_registro.xml" value="0.2" />
         <entry key="..\:/Users/herna/AppRegistro/app/src/main/res/layout/activity_editar_lista.xml" value="0.33" />
         <entry key="..\:/Users/herna/AppRegistro/app/src/main/res/menu/menu.xml" value="0.33" />
+        <entry key="..\:/Users/herna/Desktop/AppRegistro28-11-2022/AppRegistro/app/src/main/res/layout/activity_olvide.xml" value="0.33" />
         <entry key="..\:/Users/herna/Desktop/MyApplication4/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/herna/Desktop/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/herna/Desktop/MyApplication4/app/src/main/res/layout/activity_register.xml" value="0.25" />

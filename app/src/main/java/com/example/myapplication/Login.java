@@ -56,8 +56,14 @@ public class Login extends AppCompatActivity {
                             File Cfile = new File(getApplicationContext().getFilesDir() + "/" + "Archivo" + x + ".txt");
                             if(Cfile.exists()) {
                                 BufferedReader file = new BufferedReader(new InputStreamReader(openFileInput("Archivo" + x + ".txt")));
-                                String lineaTexto = file.readLine();
+                                String lineaTexto = "";
+                                String textito = "";
+                                while(lineaTexto != null){
+                                    textito = textito + lineaTexto;
+                                    lineaTexto = file.readLine();
+                                }
                                 file.close();
+
 
                                 MyInfo datos = json.leerJson(lineaTexto);
                                 String Sha1Password2 = datos.getContraseña();
@@ -78,7 +84,7 @@ public class Login extends AppCompatActivity {
                         if("Acceso autorizado -B|".equals(mensaje)){
                             Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Login.this, PaginaPrincipal.class);
-                            intent.putExtra("archivo", x);
+                            intent.putExtra("numArchivo", x);
                             startActivity(intent);
                         }
 

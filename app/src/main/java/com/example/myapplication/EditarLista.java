@@ -74,8 +74,8 @@ public class EditarLista extends AppCompatActivity {
                         String valorPassword = Pass.getText().toString();
 
                         MyData myData = new MyData();
-                        String nom = myData.setName(valorNombre);
-                        String con = myData.setContra(valorPassword);
+                        myData.setName(valorNombre);
+                        myData.setContra(valorPassword);
 
                         Gson gson = new Gson();
                         String json = gson.toJson(myData);

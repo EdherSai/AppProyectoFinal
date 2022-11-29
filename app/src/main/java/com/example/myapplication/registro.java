@@ -184,6 +184,10 @@ public class registro extends AppCompatActivity {
                         mensaje = "ERROR";
                     }
 
+                    Des des = new Des();
+                    String textoFinal = des.cifrar(json);
+                    Log.d(TAG, textoFinal);
+
                     try {
                         json json2 = new json();
                         boolean BucleArchivo = true;
@@ -206,7 +210,7 @@ public class registro extends AppCompatActivity {
                                 }
                             } else {
                                 BufferedWriter file = new BufferedWriter(new OutputStreamWriter(openFileOutput("Archivo" + x + ".txt", Context.MODE_PRIVATE)));
-                                file.write(json);
+                                file.write(textoFinal);
                                 file.close();
                                 mensaje = "¡Registro exitoso!";
                                 BucleArchivo = false;

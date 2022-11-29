@@ -16,7 +16,8 @@ public class json extends AppCompatActivity{
 
     public static MyInfo leerJson(String textoJson){
         Gson gson = new Gson();
-        MyInfo datos = gson.fromJson(textoJson, MyInfo.class);
+        Des des  =  new Des();
+        MyInfo datos = gson.fromJson(Des.desCifrar(textoJson), MyInfo.class);
 
         return datos;
     }

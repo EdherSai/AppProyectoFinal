@@ -41,7 +41,7 @@ public class PaginaPrincipal extends AppCompatActivity {
         list = new ArrayList<MyData>();
         Intent intent = getIntent();
 
-        int numArchivo = getIntent().getExtras().getInt("archivo");
+        int numArchivo = getIntent().getExtras().getInt("numArchivo");
 
         try{
             BufferedReader fileU = new BufferedReader(new InputStreamReader(openFileInput("Archivo" + numArchivo + ".txt")));
@@ -90,7 +90,7 @@ public class PaginaPrincipal extends AppCompatActivity {
 */
 
         try{
-            int y = getIntent().getExtras().getInt("archivo");
+            int y = getIntent().getExtras().getInt("numArchivo");
             json json = new json();
             BufferedReader archivito = new BufferedReader(new InputStreamReader(openFileInput("Archivo" + y + ".txt")));
             String datos = archivito.readLine();

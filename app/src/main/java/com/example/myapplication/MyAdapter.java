@@ -75,6 +75,7 @@ public class MyAdapter extends BaseAdapter implements Serializable {
         ImageButton borrar = null;
         view = layoutInflater.inflate(R.layout.activity_list_view, null );
         Nombre = view.findViewById(R.id.textViewId);
+        Contra = view.findViewById(R.id.textViewContra);
         editar = view.findViewById(R.id.ImgEditar);
         borrar = view.findViewById(R.id.ImgBorrar);
         foto = view.findViewById(R.id.imageViewId);
